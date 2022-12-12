@@ -97,7 +97,7 @@ body {
 .contact-icons-mail {
   margin-right: 10px;
   fill: currentColor;
-  cursor: pointer;
+  vertical-align: middle;
 }
 
 .contact-icons:hover {
@@ -132,8 +132,8 @@ body {
   margin: 0 auto;
   padding: 200px 452px 200px 452px;
   background-color: var(--bg-color);
-  background-image: url(/images/images-studio/headermane-img.jpg),
-  linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%);
+  background-image: url('/images/images-studio/headermane-img.jpg'),
+    linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%);
 }
 
 .main-studio-discription {
@@ -208,11 +208,12 @@ body {
 
 .advantages-box {
   border-radius: 4px;
-  width: 270px;
-  height: 120px;
   background-color: var(--bg-light-grey);
-  margin-bottom: 30px;
-  padding: 25px 100px 25px 100px;
+  cursor: pointer;
+}
+
+.advantages-item {
+  padding: 25px 100px;
 }
 
 .our-clients,
@@ -327,25 +328,24 @@ body {
 .our-clients-area {
   padding-top: 94px;
   padding-bottom: 94px;
+
 }
 
 .our-cients-list-items {
-  max-width: 1200px;
   list-style: none;
   display: flex;
+  justify-content:space-between;
+  cursor: pointer;
   margin: 0 auto;
   padding: 0px;
-  cursor: pointer;
 }
 
-.our-clients-items {
-  margin-right: 36px;
-}
 
 .our-clients-icons {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+  padding: 18px 32px 15px 32px;
 }
 
 .our-clients-icons:hover {
