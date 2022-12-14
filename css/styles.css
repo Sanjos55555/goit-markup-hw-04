@@ -14,6 +14,7 @@ body {
   --bg-light-grey: #f5f4fa;
   --border-button: #ececec;
   --border-images: #eeeeee;
+  --border-frames-clients: #afb1b8;
   --icons-fill-grey: #afb1b8;
 }
 
@@ -93,17 +94,24 @@ body {
   gap: 50px;
 }
 
-.contact-icons-tel,
 .contact-icons-mail {
-  margin-right: 10px;
+  width: 16px;
+  height: 12px;
   fill: currentColor;
   vertical-align: middle;
+  margin-right: 10px;
 }
 
-.contact-icons:hover {
-  fill: var(--color-blue);
+.contact-icons-tel {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
+.social-links:hover,
+.contact-icons:hover,
 .contacts:hover {
   color: var(--color-blue);
 }
@@ -113,9 +121,6 @@ body {
   color: var(--color-black);
 }
 
-.social-links:hover {
-  color: var(--color-blue);
-}
 
 .contacts-color {
   color: var(--color-grey);
@@ -311,7 +316,6 @@ body {
   gap: 10px;
 }
 
-
 .team-social-icon:hover {
   border-radius: 50%;
   background-color: var(--color-blue);
@@ -325,28 +329,26 @@ body {
   fill: var(--color-white);
 }
 
-
 .our-clients-area {
   padding-top: 94px;
   padding-bottom: 94px;
-
 }
 
 .our-cients-list-items {
   list-style: none;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   cursor: pointer;
   margin: 0 auto;
   padding: 0px;
 }
 
-
 .our-clients-icons {
-  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--border-frames-clients);
   border-radius: 4px;
   fill: #afb1b8;
-  padding: 18px 32px 15px 32px;
 }
 
 .our-clients-icons:hover {
